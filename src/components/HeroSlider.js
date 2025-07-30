@@ -10,19 +10,19 @@ import './HeroSlider.css';
 const slides = [
   {
     id: 1,
-    desktop: '/images/hero1.jpg',
+    desktop: '/images/Hero1.jpg',
     mobile: '/images/hero1-mobile.jpg',
     caption: 'Flawless Bridal Glam',
   },
   {
     id: 2,
-    desktop: '/images/hero2.jpg',
+    desktop: '/images/Hero2.jpg',
     mobile: '/images/hero2-mobile.jpg',
     caption: 'Your Beauty, Our Passion',
   },
   {
     id: 3,
-    desktop: '/images/hero3.jpg',
+    desktop: '/images/Hero3.jpg',
     mobile: '/images/hero3-mobile.jpg',
     caption: 'Elevate Your Look',
   },
