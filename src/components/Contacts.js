@@ -15,38 +15,39 @@ const Contacts = () => {
               <input type="hidden" name="_captcha" value="false" />
               
               <label>Name</label>
-              <input type="text" placeholder="Required" />
-
+              <input type="text" name="Name" placeholder="Required" required />
+            
               <label>Email</label>
-              <input type="email" placeholder="Optional" />
-
+              <input type="email" name="Email" placeholder="Optional" />
+            
               <div className="form-row">
                 <div className="form-group">
                   <label>Mobile No.</label>
-                  <input type="tel" placeholder="Required" />
+                  <input type="tel" name="Mobile" placeholder="Required" required />
                 </div>
                 <div className="form-group">
                   <label>Location</label>
-                  <input type="text" placeholder="Required" />
+                  <input type="text" name="Location" placeholder="Required" required />
                 </div>
               </div>
-
+            
               <div className="form-row">
                 <div className="form-group">
                   <label>Event Type</label>
-                  <input type="text" placeholder="Required" />
+                  <input type="text" name="EventType" placeholder="Required" required />
                 </div>
                 <div className="form-group">
                   <label>Event Date</label>
-                  <input type="date" />
+                  <input type="date" name="EventDate" required />
                 </div>
               </div>
-
+            
               <label>Message</label>
-              <textarea rows="4" placeholder="Optional"></textarea>
-
+              <textarea name="Message" rows="4" placeholder="Optional"></textarea>
+            
               <button type="submit">Send Message</button>
             </form>
+
           </div>
 
           {/* RIGHT INFO */}
