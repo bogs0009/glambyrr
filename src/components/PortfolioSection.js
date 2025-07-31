@@ -1,5 +1,6 @@
 // src/components/PortfolioSection.jsx
 import React from 'react';
+import React, { useState } from 'react';
 import './PortfolioSection.css';
 import { Element } from 'react-scroll';
 
@@ -17,6 +18,7 @@ const images = [
 ];
 
 const PortfolioSection = () => {
+  const [popupImg, setPopupImg] = useState(null);
   return (
     <Element name='portfolio'>
     <section className="portfolio-section">
@@ -29,6 +31,11 @@ const PortfolioSection = () => {
         ))}
       </div>
       <button className="view-more-btn">View More</button>
+      {popupImg && (
+          <div className="popup-overlay" onClick={() => setPopupImg(null)}>
+            <img src={popupImg} alt="Enlarged" className="popup-img" />
+          </div>
+        )}
     </section>
     </Element>
   );
