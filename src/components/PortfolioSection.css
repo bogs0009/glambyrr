@@ -1,4 +1,3 @@
-/*
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -24,7 +23,6 @@
   from { transform: scale(0.8); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
-*/
 
 .portfolio-section {
   padding: 60px 20px;

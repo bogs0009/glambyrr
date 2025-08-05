@@ -1,67 +1,62 @@
-/*import React from 'react';
-import { Link } from 'react-scroll';
-
-const Navbar = () => {
-  return (
-    <nav className="navbar">
-      <ul>
-        <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
-        <li><Link to="services" smooth={true} duration={500}>Services</Link></li>
-        <li><Link to="portfolio" smooth={true} duration={500}>Portfolio</Link></li>
-        <li><Link to="about" smooth={true} duration={500}>About</Link></li>
-        <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
-      </ul>
-    </nav>
-  );
-};
-
-export default Navbar;*/
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  const toggleMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+  const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
+
+  const handleLogoClick = () => {
+    if (location.pathname === '/') {
+      scroll.scrollToTop({ duration: 500 });
+    } else {
+      navigate('/');
+    }
+    closeMobileMenu();
   };
 
-  const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false);
-  };
+  const scrollSections = ['home', 'services', 'portfolio', 'about', 'contacts'];
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          className="logo-link"
-          onClick={closeMobileMenu}
-        >
-          <img src="/images/Logo-GlambyRR.png" alt="GlambyRR" className="logo-img" />
-        </Link>
+        <div onClick={handleLogoClick} className="logo-link" style={{ cursor: 'pointer' }}>
+          <img src="/images/Logo-GlambyRR.png" alt="bogs" className="logo-img" />
+        </div>
 
         <div className={`nav-links ${isMobileMenuOpen ? 'open' : ''}`}>
-          {['home', 'services', 'portfolio', 'about', 'contacts'].map((section) => (
-            <Link
-              key={section}
-              to={section}
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              className="nav-link"
-              activeClass="active"
-              onClick={closeMobileMenu}
-            >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
-            </Link>
-          ))}
+          {scrollSections.map((section) =>
+            location.pathname === '/' ? (
+              <ScrollLink
+                key={section}
+                to={section}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="nav-link"
+                activeClass="active"
+                onClick={closeMobileMenu}
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </ScrollLink>
+            ) : (
+              <RouterLink
+                key={section}
+                to="/"
+                className="nav-link"
+                onClick={closeMobileMenu}
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </RouterLink>
+            )
+          )}
         </div>
 
         <div className="hamburger" onClick={toggleMenu}>
@@ -73,3 +68,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

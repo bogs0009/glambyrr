@@ -1,7 +1,7 @@
-// src/components/PortfolioSection.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import './PortfolioSection.css';
 import { Element } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
 
 const images = [
   { id: 1, src: '/images/portfolio/photo1.jpg', alt: 'Photo 1' },
@@ -17,21 +17,39 @@ const images = [
 ];
 
 const PortfolioSection = () => {
+  const [popupImg, setPopupImg] = useState(null);
+  const navigate = useNavigate();
+
   return (
     <Element name='portfolio'>
-    <section className="portfolio-section">
-      <h2 className="portfolio-title">Portfolio</h2>
-      <div className="portfolio-grid">
-        {images.map((img, index) => (
-          <div className={`portfolio-item item-${index + 1}`} key={img.id}>
-            <img src={img.src} alt={img.alt} className="portfolio-img" />
+      <section className="portfolio-section">
+        <h2 className="portfolio-title">Portfolio</h2>
+        <div className="portfolio-grid">
+          {images.map((img, index) => (
+            <div className={`portfolio-item item-${index + 1}`} key={img.id}>
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="portfolio-img"
+                onClick={() => setPopupImg(img.src)}
+              />
+            </div>
+          ))}
+        </div>
+
+        <button className="view-more-btn" onClick={() => navigate('/portfolio')}>
+          View More
+        </button>
+
+        {popupImg && (
+          <div className="popup-overlay" onClick={() => setPopupImg(null)}>
+            <img src={popupImg} alt="Enlarged" className="popup-img" />
           </div>
-        ))}
-      </div>
-      <button className="view-more-btn">View More</button>
-    </section>
+        )}
+      </section>
     </Element>
   );
 };
 
 export default PortfolioSection;
+
