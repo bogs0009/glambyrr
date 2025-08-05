@@ -15,7 +15,8 @@ const categories = [
   {
     title: 'Graduations',
     images: ['/images/graduations/grad1.jpg', '/images/graduations/grad2.jpg',
-            '/images/graduations/grad3.jpg', '/images/graduations/grad4.jpg'],
+            '/images/graduations/grad3.jpg', '/images/graduations/grad4.jpg',
+            '/images/graduations/grad5.jpg', '/images/graduations/grad6.jpg'],
   },
 ];
 
