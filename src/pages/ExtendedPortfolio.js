@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ExtendedPortfolio.css';
 import { Link } from 'react-router-dom';
 
@@ -27,23 +27,58 @@ const categories = [
 ];
 
 const ExtendedPortfolio = () => {
+  // which category is open (null = none). This makes an accordion (one open at a time).
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleCategory = (i) => {
+    setOpenIndex((prev) => (prev === i ? null : i));
+  };
+
   return (
     <div className="extended-portfolio">
       <h1>My Glam Works</h1>
       <Link to="/" className="back-link">← Back to Home</Link>
 
-      {categories.map((cat, i) => (
-        <div key={i} className="category-section">
-          <h2>{cat.title}</h2>
-          <div className="category-images">
-            {cat.images.map((src, index) => (
-              <img key={index} src={src} alt={`${cat.title}-${index}`} className="portfolio-img" />
-            ))}
+      <div className="folders">
+        {categories.map((cat, i) => (
+          <div key={i} className="category-section">
+            <button
+              className={`category-header ${openIndex === i ? 'open' : ''}`}
+              onClick={() => toggleCategory(i)}
+              aria-expanded={openIndex === i}
+              aria-controls={`cat-${i}`}
+            >
+              <span className="folder-left">
+                <span className="category-title">{cat.title}</span>
+              </span>
+              <span className="chevron" aria-hidden="true">
+                {openIndex === i ? '▲' : '▼'}
+              </span>
+            </button>
+
+            <div
+              id={`cat-${i}`}
+              className={`category-content ${openIndex === i ? 'open' : ''}`}
+              >
+              <div className="category-images">
+                {cat.images.map((src, idx) => (
+                  <img
+                  key={idx}
+                  src={src}
+                  alt={`${cat.title} ${idx + 1}`}
+                  className="portfolio-img"
+                  loading="lazy"
+                  />
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
 
 export default ExtendedPortfolio;
+
+/*<span className="folder-icon" aria-hidden="true"></span>*/
