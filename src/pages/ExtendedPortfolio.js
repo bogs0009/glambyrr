@@ -16,7 +16,8 @@ const categories = [
   },
   {
     title: 'Graduations',
-    images: ['/images/graduations/grad7.jpg', '/images/graduations/grad8.jpg',
+    images: ['/images/graduations/grad19.jpg', '/images/graduations/grad20.jpg',
+            '/images/graduations/grad7.jpg', '/images/graduations/grad8.jpg',
             '/images/graduations/grad18.jpg', '/images/graduations/grad17.jpg',
             '/images/graduations/grad15.jpg', '/images/graduations/grad16.jpg',
             '/images/graduations/grad9.jpg', '/images/graduations/grad10.jpg',
