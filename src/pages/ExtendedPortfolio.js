@@ -16,7 +16,10 @@ const categories = [
   },
   {
     title: 'Graduations',
-    images: ['/images/graduations/grad21.jpg', '/images/graduations/grad22.jpg',
+    images: ['/images/graduations/grad29.jpg', '/images/graduations/grad30.jpg',
+            '/images/graduations/grad21.jpg', '/images/graduations/grad22.jpg',
+            '/images/graduations/grad27.jpg', '/images/graduations/grad28.jpg',
+            '/images/graduations/grad25.jpg', '/images/graduations/grad26.jpg',
             '/images/graduations/grad19.jpg', '/images/graduations/grad20.jpg',
             '/images/graduations/grad7.jpg', '/images/graduations/grad8.jpg',
             '/images/graduations/grad23.jpg', '/images/graduations/grad24.jpg',
@@ -28,6 +31,12 @@ const categories = [
             '/images/graduations/grad1.jpg', '/images/graduations/grad2.jpg',
             '/images/graduations/grad3.jpg', '/images/graduations/grad4.jpg',
             '/images/graduations/grad5.jpg', '/images/graduations/grad6.jpg'],
+  },
+  {
+    title: 'Especial Occasions',
+    images: ['/images/especials/esp1.jpg', '/images/especials/esp2.jpg',
+            '/images/especials/esp3.jpg', '/images/especials/esp4.jpg',
+            ],
   },
 ];
 
