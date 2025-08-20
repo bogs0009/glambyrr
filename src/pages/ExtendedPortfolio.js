@@ -36,6 +36,7 @@ const categories = [
     title: 'Especial Occasions',
     images: ['/images/especials/esp1.jpg', '/images/especials/esp2.jpg',
             '/images/especials/esp3.jpg', '/images/especials/esp4.jpg',
+            '/images/especials/esp5.jpg', '/images/especials/esp6.jpg',
             ],
   },
 ];
