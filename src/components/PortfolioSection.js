@@ -37,9 +37,24 @@ const PortfolioSection = () => {
           ))}
         </div>
 
-        <button className="view-more-btn" onClick={() => navigate('/portfolio')}>
-          View More
-        </button>
+        {/* Buttons stacked for mobile by default */}
+        <div className="portfolio-actions">
+          <button
+            className="view-more-btn"
+            onClick={() => navigate('/portfolio')}
+            aria-label="View more photos in my portfolio"
+          >
+            View More
+          </button>
+
+          <button
+            className="view-more-btn secondary"
+            onClick={() => navigate('/videos')}
+            aria-label="Watch behind the scene videos"
+          >
+            Watch Behind the Scene
+          </button>
+        </div>
 
         {popupImg && (
           <div className="popup-overlay" onClick={() => setPopupImg(null)}>

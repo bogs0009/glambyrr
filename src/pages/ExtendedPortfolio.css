@@ -107,3 +107,12 @@ a.nav-link {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
 }
+
+/* Make videos visually match image cards */
+.portfolio-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  outline: none;
+}

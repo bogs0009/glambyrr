@@ -8,6 +8,7 @@ import About from './components/About';
 import Contacts from './components/Contacts';
 import Footer from './components/Footer';
 import ExtendedPortfolio from './pages/ExtendedPortfolio';
+import BehindTheScenes from './pages/BehindTheScenes';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
@@ -30,6 +31,7 @@ function App() {
           }
         />
         <Route path="/portfolio" element={<ExtendedPortfolio />} />
+        <Route path="/videos" element={<BehindTheScenes />} /> 
       </Routes>
     </Router>
   );
