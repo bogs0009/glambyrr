@@ -44,9 +44,12 @@ const categories = [
   },
   {
     title: 'Kiddie Edition',
-    images: ['/images/kiddie/kid1.jpg', '/images/kiddie/kid2.jpg',
-            '/images/kiddie/kid3.jpg', '/images/kiddie/kid4.jpg',
-            '/images/kiddie/kid5.jpg', '/images/kiddie/kid6.jpg'],
+    images: ['/images/kiddie/kid7.jpg', '/images/kiddie/kid8.jpg',
+            '/images/kiddie/kid9.jpg','/images/kiddie/kid1.jpg',
+            '/images/kiddie/kid2.jpg','/images/kiddie/kid3.jpg',
+            '/images/kiddie/kid4.jpg','/images/kiddie/kid5.jpg',
+            '/images/kiddie/kid6.jpg',
+            ],
   },
 ];
 
