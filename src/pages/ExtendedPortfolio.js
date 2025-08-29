@@ -5,7 +5,11 @@ import { Link } from 'react-router-dom';
 const categories = [
   {
     title: 'Weddings',
-    images: ['/images/weddings/wed1.jpg', '/images/weddings/wed2.jpg'],
+    images: ['/images/weddings/wed1.jpg', '/images/weddings/wed2.jpg',
+            '/images/weddings/ent1.jpg', '/images/weddings/ent2.jpg',
+            '/images/weddings/ent3.jpg', '/images/weddings/ent4.jpg',
+            '/images/weddings/ent5.jpg', '/images/weddings/ent6.jpg',
+            ],
   },
   {
     title: 'Birthdays',
