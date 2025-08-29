@@ -52,7 +52,8 @@ const categories = [
             '/images/kiddie/kid9.jpg','/images/kiddie/kid1.jpg',
             '/images/kiddie/kid2.jpg','/images/kiddie/kid3.jpg',
             '/images/kiddie/kid4.jpg','/images/kiddie/kid5.jpg',
-            '/images/kiddie/kid6.jpg',
+            '/images/kiddie/kid6.jpg', '/images/kiddie/kid01.jpg',
+            '/images/kiddie/kid02.jpg',
             ],
   },
 ];
