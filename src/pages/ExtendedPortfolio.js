@@ -20,7 +20,10 @@ const categories = [
   },
   {
     title: 'Graduations',
-    images: ['/images/graduations/grad29.jpg', '/images/graduations/grad30.jpg',
+    images: ['/images/graduations/grad33.jpg', '/images/graduations/grad34.jpg',
+            '/images/graduations/grad31.jpg', '/images/graduations/grad33.jpg',
+            '/images/graduations/grad35.jpg', '/images/graduations/grad36.jpg',
+            '/images/graduations/grad29.jpg', '/images/graduations/grad30.jpg',
             '/images/graduations/grad21.jpg', '/images/graduations/grad22.jpg',
             '/images/graduations/grad27.jpg', '/images/graduations/grad28.jpg',
             '/images/graduations/grad25.jpg', '/images/graduations/grad26.jpg',
