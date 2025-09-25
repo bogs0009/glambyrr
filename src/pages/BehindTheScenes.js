@@ -23,6 +23,12 @@ const videoCategories = [
       { src: '/videos/graduations/Grad_bts2.mp4', poster: '/images/graduations/Grad_bts2.jpg' },
     ],
   },
+  {
+    title: 'Specials — BTS',
+    videos: [
+      { src: '/videos/especials/Spec_bts1.mp4', poster: '/images/especials/Esp_bts1.jpg' },
+    ],
+  },
 ];
 
 const BehindTheScenes = () => {
