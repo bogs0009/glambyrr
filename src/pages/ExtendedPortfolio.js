@@ -20,7 +20,9 @@ const categories = [
   },
   {
     title: 'Graduations',
-    images: ['/images/graduations/grad37.jpg', '/images/graduations/grad38.jpg',
+    images: ['/images/graduations/grad42.jpg', '/images/graduations/grad41.jpg',
+            '/images/graduations/grad40.jpg', '/images/graduations/grad39.jpg',
+            '/images/graduations/grad37.jpg', '/images/graduations/grad38.jpg',
             '/images/graduations/grad33.jpg', '/images/graduations/grad34.jpg',
             '/images/graduations/grad31.jpg', '/images/graduations/grad32.jpg',
             '/images/graduations/grad35.jpg', '/images/graduations/grad36.jpg',
@@ -52,7 +54,9 @@ const categories = [
   },
   {
     title: 'Kiddie Edition',
-    images: ['/images/kiddie/kid7.jpg', '/images/kiddie/kid8.jpg',
+    images: ['/images/kiddie/kid13.jpg', '/images/kiddie/kid14.jpg',
+            '/images/kiddie/kid11.jpg','/images/kiddie/kid10.jpg',
+            '/images/kiddie/kid7.jpg', '/images/kiddie/kid8.jpg',
             '/images/kiddie/kid9.jpg','/images/kiddie/kid1.jpg',
             '/images/kiddie/kid2.jpg','/images/kiddie/kid3.jpg',
             '/images/kiddie/kid4.jpg','/images/kiddie/kid5.jpg',
