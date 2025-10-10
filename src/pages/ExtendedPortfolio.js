@@ -44,7 +44,10 @@ const categories = [
   },
   {
     title: 'Especial Occasions',
-    images: ['/images/especials/esp1.jpg', '/images/especials/esp2.jpg',
+    images: ['/images/especials/esp16.jpg', '/images/especials/esp17.jpg',
+            '/images/especials/esp18.jpg', '/images/especials/esp13.jpg',
+            '/images/especials/esp14.jpg', '/images/especials/esp15.jpg',
+            '/images/especials/esp1.jpg', '/images/especials/esp2.jpg',
             '/images/especials/esp3.jpg', '/images/especials/esp4.jpg',
             '/images/especials/esp7.jpg', '/images/especials/esp8.jpg',
             '/images/especials/esp9.jpg', '/images/especials/esp10.jpg',
