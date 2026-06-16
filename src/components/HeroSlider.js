@@ -9,6 +9,36 @@ import './HeroSlider.css';
 
 const slides = [
   {
+    id: 4,
+    desktop: '/images/Twenty26/Landscape-Post.jpg',
+    mobile: '/images/Twenty26/Portrait-Post.jpg',
+    
+  },
+  {
+    id: 5,
+    desktop: '/images/Twenty26/Poster-Landscape-GlambyRR.jpg',
+    mobile: '/images/Twenty26/Poster-GlambyRR.jpg',
+    
+  },
+  {
+    id: 6,
+    desktop: '/images/Twenty26/Poster-Landscape-2.jpg',
+    mobile: '/images/Twenty26/Tabloid-Post.jpg',
+    
+  },
+  {
+    id: 7,
+    desktop: '/images/Twenty26/HERO-Bento.jpg',
+    mobile: '/images/Twenty26/Bento-Post.jpg',
+    
+  },
+  {
+    id: 7,
+    desktop: '/images/Twenty26/HERO-Bento-2.jpg',
+    mobile: '/images/Twenty26/Bento-Post-2.jpg',
+    
+  },
+  {
     id: 1,
     desktop: '/images/Hero1.jpg',
     mobile: '/images/hero1-mobile.jpg',
