@@ -12,31 +12,31 @@ const slides = [
     id: 4,
     desktop: '/images/Twenty26/Landscape-Post.jpg',
     mobile: '/images/Twenty26/Portrait-Post.jpg',
-    
+    caption: 'Book Your Look Now!',
   },
   {
     id: 5,
     desktop: '/images/Twenty26/Poster-Landscape-GlambyRR.jpg',
     mobile: '/images/Twenty26/Poster-GlambyRR.jpg',
-    
+    caption: 'Book Your Look Now!',
   },
   {
     id: 6,
     desktop: '/images/Twenty26/Poster-Landscape-2.jpg',
     mobile: '/images/Twenty26/Tabloid-Post.jpg',
-    
+    caption: 'Book Your Look Now!',
   },
   {
     id: 7,
     desktop: '/images/Twenty26/HERO-Bento.jpg',
     mobile: '/images/Twenty26/Bento-Post.jpg',
-    
+    caption: 'Book Your Look Now!',
   },
   {
-    id: 7,
+    id: 8,
     desktop: '/images/Twenty26/HERO-Bento-2.jpg',
     mobile: '/images/Twenty26/Bento-Post-2.jpg',
-    
+    caption: 'Book Your Look Now!',
   },
   {
     id: 1,
