@@ -9,6 +9,24 @@ import './HeroSlider.css';
 
 const slides = [
   {
+    id: 1,
+    desktop: '/images/Hero1.jpg',
+    mobile: '/images/Twenty26/hero1-mobile.jpg',
+    caption: 'Flawless Bridal Glam',
+  },
+  {
+    id: 2,
+    desktop: '/images/Hero2.jpg',
+    mobile: '/images/Twenty26/hero2-mobile.jpg',
+    caption: 'Your Beauty, Our Passion',
+  },
+  {
+    id: 3,
+    desktop: '/images/Hero3.jpg',
+    mobile: '/images/Twenty26/hero3-mobile.jpg',
+    caption: 'Elevate Your Look',
+  },
+  {
     id: 4,
     desktop: '/images/Twenty26/Landscape-Post.jpg',
     mobile: '/images/Twenty26/Portrait-Post.jpg',
@@ -37,24 +55,6 @@ const slides = [
     desktop: '/images/Twenty26/HERO-Bento-2.jpg',
     mobile: '/images/Twenty26/Bento-Post-2.jpg',
     caption: 'Book Your Look Now!',
-  },
-  {
-    id: 1,
-    desktop: '/images/Hero1.jpg',
-    mobile: '/images/hero1-mobile.jpg',
-    caption: 'Flawless Bridal Glam',
-  },
-  {
-    id: 2,
-    desktop: '/images/Hero2.jpg',
-    mobile: '/images/hero2-mobile.jpg',
-    caption: 'Your Beauty, Our Passion',
-  },
-  {
-    id: 3,
-    desktop: '/images/Hero3.jpg',
-    mobile: '/images/hero3-mobile.jpg',
-    caption: 'Elevate Your Look',
   },
 ];
 
